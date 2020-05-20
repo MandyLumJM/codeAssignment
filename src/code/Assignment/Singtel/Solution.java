@@ -1,32 +1,37 @@
 package code.Assignment.Singtel;
 
-class Animal {
-	void walk(){
-		System.out.println("I am walking");
-	}
-}
+// Q1b
+// Optimize the code for maintainability by creating an interface for Animal and Bird 
+// By using interface, additional method can be added to implement class(Solution) easily. 
+public class Solution implements Animal , Bird {
 
-class Bird extends Animal {
-	void fly() {
+	@Override
+	public void walk() {
+			System.out.println("I am walking");
+		
+	}
+
+	@Override
+	public void fly() {
 		System.out.println("I am flying");
+		
 	}
 
-	void sing() { // Q1
-		// TODO Auto-generated method stub
+	@Override
+	public void sing() {
 		System.out.println("I am singing");
+		
 	}
-
-
-}
-
-public class Solution {
 	
 	public static void main(String[] args) {
-		Bird bird = new Bird();
-		bird.walk();
-		bird.fly();
-		bird.sing();
+		
+		Bird refBird = new Solution();
+		refBird.walk();
+		refBird.fly();
+		refBird.sing();
 
 	}
+	
+	
 
 }
