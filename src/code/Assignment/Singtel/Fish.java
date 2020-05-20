@@ -34,6 +34,34 @@ public class Fish implements Bird {
 		
 	}
 	
+	void features() {
+		
+	}
+	
 }
+
+//Q2 - specialize the fish
+// features method in sharks and clownfish class will override fish class's features method when being called.
+class Shark extends Fish{
+	
+	@Override
+	void features() {
+		System.out.println("Sharks are large and grey");
+		System.out.println("Sharks eat other fish");
+	}
+}
+
+class ClownFish extends Fish{
+	
+	@Override
+	void features() {
+		System.out.println("Clownfish make jokes");
+		System.out.println("Clownfish are small and colourful (orange)");
+		
+	}
+	
+}
+
+
 
 
