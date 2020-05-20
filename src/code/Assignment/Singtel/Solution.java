@@ -37,15 +37,11 @@ public class Solution implements Animal , Bird {
 	
 	public static void main(String[] args) {
 		
-		Bird refBird = new Chicken();
-		refBird.sound(); // output: "Cluck, Cluck"
-		refBird.fly();	 // output: "A chicken cannot fly"
-		
-		Bird refBird2 = new Duck();
-		refBird2.sound(); // output: "Quack, Quack"
-		refBird2.swim();  // output: "A duck can swim"
-		
+		//Q3a
+		Bird refBird = new Rooster();
+		refBird.sound(); // output: "Cock-a-doodle-doo"
 
+		//Q3b rooster is a chicken, they has a IS A relationship.
 	}
 
 

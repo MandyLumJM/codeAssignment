@@ -33,4 +33,12 @@ public class Chicken implements Bird {
 	} 
 }
 
+// 3a
+class Rooster extends Chicken{
+	@Override
+	public void sound() {
+		System.out.println("Cock-a-doodle-doo");
+	}
+}
+
 
