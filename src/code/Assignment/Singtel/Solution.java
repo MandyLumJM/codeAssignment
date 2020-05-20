@@ -23,14 +23,32 @@ public class Solution implements Animal , Bird {
 		
 	}
 	
+	@Override
+	public void swim() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sound() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 	public static void main(String[] args) {
 		
-		Bird refBird = new Solution();
-		refBird.walk();
-		refBird.fly();
-		refBird.sing();
+		Bird refBird = new Chicken();
+		refBird.sound(); // output: "Cluck, Cluck"
+		refBird.fly();	 // output: "A chicken cannot fly"
+		
+		Bird refBird2 = new Duck();
+		refBird2.sound(); // output: "Quack, Quack"
+		refBird2.swim();  // output: "A duck can swim"
+		
 
 	}
+
+
 	
 	
 
