@@ -1,6 +1,6 @@
 package code.Assignment.Singtel;
 
-//B. Model fish as well as other swimming animals
+//B. Model fish as well as other swimming animals.
 //Q1
 public class Fish implements Bird {
 
