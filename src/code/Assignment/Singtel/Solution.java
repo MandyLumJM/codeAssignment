@@ -1,5 +1,7 @@
 package code.Assignment.Singtel;
 
+
+
 // Q1b
 // Optimize the code for maintainability by creating an interface for Animal and Bird 
 // By using interface, additional method can be added to implement class(Solution) easily. 
@@ -37,11 +39,16 @@ public class Solution implements Animal , Bird {
 	
 	public static void main(String[] args) {
 		
-		//Q3a
-		Bird refBird = new Rooster();
-		refBird.sound(); // output: "Cock-a-doodle-doo"
-
-		//Q3b rooster is a chicken, they has a IS A relationship.
+		Parrot refParrot = new Parrot();
+		refParrot.livingWithDog(); //"Woof, woof"
+		refParrot.livingWithCat(); //"Meow"
+		refParrot.livingNearRooster(); //"Cock-a-doodle-doo"
+		
+		//4d
+		refParrot.liveNearDuck(); //"Quack, quack"
+		refParrot.nearPhoneRing();// "Ring, ring"
+		
+		
 	}
 
 
